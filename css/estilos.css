@@ -2,6 +2,9 @@ body {
   color: #333333;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
+header {
+  position: relative;
+}
 .container {
   margin: 0 auto;
   width: 940px;
@@ -11,12 +14,20 @@ body {
   background-repeat: no-repeat; 
   background-position: top right;
   
+  position: absolute;
+  top:0;
+  right: 0;
   width: 140px;
   padding-top: 8px;
   padding-right: 35px;
   
   text-align: right;
   font-size: 14px;
+}
+.menu-opcoes {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 .menu-opcoes ul {
   font-size: 15px;
