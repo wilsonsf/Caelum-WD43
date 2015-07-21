@@ -5,6 +5,14 @@ body {
 header {
   position: relative;
 }
+footer {
+  clear: both;
+  padding: 20px 0;
+  background-image: url(../img/fundo-rodape.png);
+}
+footer .container {
+  position: relative;
+}
 .container {
   margin: 0 auto;
   width: 940px;
@@ -106,4 +114,31 @@ header {
 .mais-vendidos {
   float: right;
   background-color: #DCDCF5;
+}
+.social {
+  position: absolute;
+  top: 12px;
+  right: 0;
+}
+.social li {
+  float: left;
+  margin-left: 25px;
+}
+.social li a {
+  /* tamanho da imagem */
+  height: 32px;
+  width: 32px;
+  
+  /* substituicao de imagem */
+  display: block;
+  text-indent: -9999px;
+}
+.social li a[href*="facebook"] {
+  background-image: url(../img/facebook.png);
+}
+.social li a[href*="twitter"] {
+  background-image: url(../img/twitter.png);
+}
+.social li a[href*="plus.google"] {
+  background-image: url(../img/googleplus.png);
 }
