@@ -10,6 +10,13 @@ h1 {
   padding: 10px;
   background-image: url(../img/sobre-background.jpg);
 } */
+article {
+  margin: 10px 0;
+  padding: 5px 0;
+}
+p {
+  margin-bottom: 3px;
+}
 h2 {
   margin-top: 30px;
   border-bottom: 2px solid #333333;
@@ -33,17 +40,3 @@ figcaption {
   float: right;
   margin: 0 0 10px 10px;
 }
-#rodape {
-  margin: 30px 0;
-  padding: 30px 0;
-  color: #777;
-}
-#rodape img {
-  margin-right:30px;
-  vertical-align: middle;
-  width: 94px;
-}
-footer .container {
-  position: relative;
-}
-
