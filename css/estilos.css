@@ -157,6 +157,22 @@ footer .container {
   padding-bottom: 10px;
   vertical-align: top;
 }
+.painel li:hover {
+  /*
+  -webkit-box-shadow: 
+     -moz-box-shadow: 
+      -ms-box-shadow: 
+       -o-box-shadow: 
+  */
+          box-shadow: 0 0 5px #333;
+  -webkit-transition: box-shadow 0.7s;
+  /*
+     -moz-transition:
+      -ms-transition:
+       -o-transition:
+  */
+          transition: box-shadow 0.7s;
+}
 .novidades {
   float: left;
   background-color: #F5DCDC;
