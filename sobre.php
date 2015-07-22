@@ -1,4 +1,7 @@
-<?php include_once("cabecalho.php"); ?>
+<?php
+  $cabecalho_title = "Sobra a Mirror Fashion";
+  include_once("cabecalho.php");
+?>
 <article class="container">
   <section>
     <p>

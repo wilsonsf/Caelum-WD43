@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mirror Fashion</title>
+  <title><?php print $cabecalho_title; ?></title>
   <meta charset="UTF-8">
   
   <link rel="stylesheet" href="css/reset.css">
