@@ -8,21 +8,7 @@
     <link rel="stylesheet" href="css/sobre.css">
 	</head>
 	<body>
-	  <header class="container">
-      <h1><a href="index.html"><img src="img/logo.png" alt="Mirror Fashion"></a></h1>
-      <div class="sacola">
-        Nenhum item na sacola de compras
-      </div>
-      <nav class="menu-opcoes">
-        <ul>
-          <li><a href="#">Sua Conta</a></li>
-          <li><a href="#">Lista de Desejos</a></li>
-          <li><a href="#">Cartão Fidelidade</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="#">Ajuda</a></li>
-        </ul>
-      </nav>
-    </header>
+	  <?php include_once("cabecalho.php"); ?>
     <article class="container">
       <section>
 	      <p>
@@ -36,7 +22,7 @@
 	        <figcaption>Centro de distribuição da Mirror Fashion</figcaption>
 	      </figure>
 	      <p>
-	        Compre suas roupas e acessórios na Mirror Fashion. Acesse <a href="index.html">nossa loja</a> ou entre em contato se tiver dúvidas. Conheça também nossa <a href="#historia">história</a> e nossos <a href="#diferenciais">diferenciais</a>.
+	        Compre suas roupas e acessórios na Mirror Fashion. Acesse <a href="index.php">nossa loja</a> ou entre em contato se tiver dúvidas. Conheça também nossa <a href="#historia">história</a> e nossos <a href="#diferenciais">diferenciais</a>.
         </p>
       </section>
       <section>
@@ -72,16 +58,6 @@
         </ul>
       </section>
     </article> <!-- fim .container -->
-    <footer>
-      <div class="container">
-        <img src="img/logo-rodape.png" alt="Logo Mirror Fashion">
-        <!-- <span>&copy; Copyright Mirror Fashion</span> -->
-        <ul class="social">
-          <li><a href="http://facebook.com/mirrorfashion">Facebook</a></li>
-          <li><a href="http://twitter.com/mirrorfashion">Twitter</a></li>
-          <li><a href="htto://plus.google.com/mirrorfashion">Google+</a></li>
-        </ul> <!-- fim .social -->
-      </div> <!-- fim .container -->
-    </footer>
+    <?php include_once("rodape.php"); ?>
 	</body>
 </html>

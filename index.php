@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/mobile.css" media="(max-width: 939px)">
 </head>
 <body>
+  <?php include_once("cabecalho.php"); ?>
   <div class="container destaque">
     <section class="busca">
       <h2>Busca</h2>
@@ -51,7 +52,7 @@
       <h2>Novidades</h2>
       <ol>
         <li>
-          <a href="produto.html">
+          <a href="produto.php">
             <figure>
               <img src="img/produtos/miniatura1.png" alt="">
               <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -59,7 +60,7 @@
           </a>
         </li>
         <li>
-          <a href="produto.html">
+          <a href="produto.php">
             <figure>
               <img src="img/produtos/miniatura2.png" alt="">
               <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -67,14 +68,14 @@
           </a>
         </li>
         <li>
-          <a href="produto.html">
+          <a href="produto.php">
             <figure>
               <img src="img/produtos/miniatura3.png" alt="">
               <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
             </figure>
         </li>
         <li>
-          <a href="produto.html">
+          <a href="produto.php">
             <figure>
               <img src="img/produtos/miniatura4.png" alt="">
               <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -82,7 +83,7 @@
           </a>
         </li>
         <li>
-          <a href="produto.html">
+          <a href="produto.php">
             <figure>
               <img src="img/produtos/miniatura5.png" alt="">
               <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -90,7 +91,7 @@
           </a>
         </li>
         <li>
-          <a href="produto.html">
+          <a href="produto.php">
             <figure>
               <img src="img/produtos/miniatura6.png" alt="">
               <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -104,7 +105,7 @@
       <h2>Mais Vendidos</h2>
       <ol>
         <li>
-          <a href="produto.html">
+          <a href="produto.php">
             <figure>
               <img src="img/produtos/miniatura1.png" alt="">
               <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -112,7 +113,7 @@
           </a>
         </li>
         <li>
-          <a href="produto.html">
+          <a href="produto.php">
             <figure>
               <img src="img/produtos/miniatura2.png" alt="">
               <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -120,7 +121,7 @@
           </a>
         </li>
         <li>
-          <a href="produto.html">
+          <a href="produto.php">
             <figure>
               <img src="img/produtos/miniatura3.png" alt="">
               <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -128,7 +129,7 @@
           </a>
         </li>
         <li>
-          <a href="produto.html">
+          <a href="produto.php">
             <figure>
               <img src="img/produtos/miniatura4.png" alt="">
               <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -136,7 +137,7 @@
           </a>
         </li>
         <li>
-          <a href="produto.html">
+          <a href="produto.php">
             <figure>
               <img src="img/produtos/miniatura5.png" alt="">
               <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -144,7 +145,7 @@
           </a>
         </li>
         <li>
-          <a href="produto.html">
+          <a href="produto.php">
             <figure>
               <img src="img/produtos/miniatura6.png" alt="">
               <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -154,17 +155,7 @@
       </ol>
     </section> <!-- fim .painel .mais-vendidos -->
   </div> <!-- fim .container .paineis -->
-  <footer>
-    <div class="container">
-      <img src="img/logo-rodape.png" alt="Logo Mirror Fashion">
-      
-      <ul class="social">
-        <li><a href="http://facebook.com/mirrorfashion">Facebook</a></li>
-        <li><a href="http://twitter.com/mirrorfashion">Twitter</a></li>
-        <li><a href="htto://plus.google.com/mirrorfashion">Google+</a></li>
-      </ul> <!-- fim .social -->
-    </div> <!-- fim .container -->
-  </footer>
+  <?php include_once("rodape.php"); ?>
   <script src="js/home.js"></script>
 </body>
 </html>

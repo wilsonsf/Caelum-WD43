@@ -10,5 +10,7 @@
 </head>
 <body>
   <?php include_once("cabecalho.php"); ?>
+  
+  <?php include_once("rodape.php"); ?>
 </body>
 </html>
