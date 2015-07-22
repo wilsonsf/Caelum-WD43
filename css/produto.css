@@ -79,6 +79,7 @@ label[for=azul]:after {
     position: relative;
     /* Garantindo o espaço da imagem  */ 
     padding-left: 40%;
+    font-size: 1.2em;
   }
   .cores {
     /* para evitar que a imagem se posicione erroneamente */ 
@@ -89,9 +90,13 @@ label[for=azul]:after {
     position: absolute;
     top: 0;
     left: 0;
+    
+    max-height: 100%;
+    max-width: 35%;
   }
   .cores label:after {
     position: static;
     float: left;
+    margin-right: 10px;
   }
 /* } */
