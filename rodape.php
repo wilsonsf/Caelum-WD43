@@ -9,3 +9,5 @@
     </ul> <!-- fim .social -->
   </div> <!-- fim .container -->
 </footer>
+</body>
+</html>
