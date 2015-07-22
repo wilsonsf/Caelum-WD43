@@ -166,8 +166,8 @@ footer .container {
        -o-box-shadow: 
   */
           box-shadow: 0 0 5px #333;
-   -webkit-transform: scale(1.2) rotate(-15deg);
-           transform: scale(1.2) rotate(-15deg);
+   -webkit-transform: scale(1.2);
+           transform: scale(1.2);
   -webkit-transition: 0.7s;
   /*
      -moz-transition:
@@ -176,6 +176,16 @@ footer .container {
   */
           transition: 0.7s;
 }
+.painel li:nth-child(2n):hover {
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+.painel li:nth-child(2n+1):hover {
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+
+}
+
 .novidades {
   float: left;
   background-color: #F5DCDC;
