@@ -73,3 +73,25 @@ label[for=azul]:after {
   padding: 0.5em 1em;
   margin: 1em 0;
 }
+/* @media (mix-width: 630px) { */
+  .produto {
+    /* para posicionar a imagem com absolute */
+    position: relative;
+    /* Garantindo o espaço da imagem  */ 
+    padding-left: 40%;
+  }
+  .cores {
+    /* para evitar que a imagem se posicione erroneamente */ 
+    position: static;
+    padding-top: 0; /* resetando valor */
+  }
+  .cores label img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .cores label:after {
+    position: static;
+    float: left;
+  }
+/* } */
