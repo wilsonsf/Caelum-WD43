@@ -157,13 +157,13 @@ footer .container {
   padding-bottom: 10px;
   vertical-align: top;
   
-  -webkit-transition: 0.7s;
   /*
      -moz-transition:
       -ms-transition:
        -o-transition:
   */
-          transition: 0.7s;
+  -webkit-transition: 0.7s ease-out;
+          transition: 0.7s ease-out;
 }
 .painel li:hover {
   background-color: rgba(255,255,255,0.8);
@@ -176,6 +176,8 @@ footer .container {
           box-shadow: 0 0 5px #333;
    -webkit-transform: scale(1.2);
            transform: scale(1.2);
+  -webkit-transition: 0.7s ease-in;
+          transition: 0.7s ease-in;
 }
 .painel li:nth-child(2n):hover {
   -webkit-transform: rotate(15deg);
