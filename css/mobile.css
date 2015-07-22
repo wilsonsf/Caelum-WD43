@@ -33,3 +33,11 @@ header h1 img {
 .painel img {
   width: 100%;
 }
+.play,
+.pause {
+  top: auto;
+  right: auto;
+  
+  left: 10px;
+  bottom: 10px;
+}
