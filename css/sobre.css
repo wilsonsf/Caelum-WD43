@@ -15,7 +15,8 @@ article {
   padding: 5px 0;
 }
 p {
-  margin-bottom: 3px;
+  text-indent: 20px;
+  margin-bottom: 5px;
 }
 p:first-letter {
   font-weight: bold;
@@ -23,10 +24,11 @@ p:first-letter {
 h1 > p {
   text-indent: 0;
 }
-p:first-line {
+:not(p) + p:first-line, p:first-child:first-line {
   font-variant: small-caps;
 }
 h2 {
+  font-size: 1.3em;
   margin-top: 30px;
   border-bottom: 2px solid #333333;
 }
@@ -40,6 +42,16 @@ figure {
 figcaption {
   margin-top: 10px;
   font-style: italic;
+}
+ul {
+  padding: 3px 0;
+}
+li {
+  margin-bottom: 2px;
+}
+li:before {
+  content: '- ';
+  padding: 0 3px;
 }
 #centro-distribuicao {
   width: 550px;
