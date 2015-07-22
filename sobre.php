@@ -1,5 +1,6 @@
 <?php
   $cabecalho_title = "Sobra a Mirror Fashion";
+  $cabecalho_css = '<link rel="stylesheet" href="css/sobre.css">';
   include_once("cabecalho.php");
 ?>
 <article class="container">
