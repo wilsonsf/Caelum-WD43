@@ -1,4 +1,6 @@
 <?php
+  $conexao = mysqli_connect("localhost","root","","WD43");
+
   $cabecalho_title = "Mirror Fashion";
   include_once("cabecalho.php"); 
 ?>
@@ -43,53 +45,18 @@
   <section class="painel novidades">
     <h2>Novidades</h2>
     <ol>
+      <?php 
+        $dados = mysqli_query($conexao, "SELECT * FROM produtos ORDER BY data DESC LIMIT 6");
+        while($prod = mysqli_fetch_array($dados)): ?>
       <li>
-        <a href="produto.php">
+        <a href="produto.php?id=<?= $prod["id"] ?>">
           <figure>
-            <img src="img/produtos/miniatura1.png" alt="">
-            <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+            <img src="img/produtos/miniatura<?= $prod["id"] ?>.png" alt="<?= $prod["name"] ?>">
+            <figcaption><?= $prod["name"] ?> por R$<?= $prod["preco"] ?></figcaption>
           </figure>
         </a>
       </li>
-      <li>
-        <a href="produto.php">
-          <figure>
-            <img src="img/produtos/miniatura2.png" alt="">
-            <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
-          </figure>
-        </a>
-      </li>
-      <li>
-        <a href="produto.php">
-          <figure>
-            <img src="img/produtos/miniatura3.png" alt="">
-            <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
-          </figure>
-      </li>
-      <li>
-        <a href="produto.php">
-          <figure>
-            <img src="img/produtos/miniatura4.png" alt="">
-            <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
-          </figure>
-        </a>
-      </li>
-      <li>
-        <a href="produto.php">
-          <figure>
-            <img src="img/produtos/miniatura5.png" alt="">
-            <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
-          </figure>
-        </a>
-      </li>
-      <li>
-        <a href="produto.php">
-          <figure>
-            <img src="img/produtos/miniatura6.png" alt="">
-            <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
-          </figure>
-        </a>
-      </li>
+      <?php endwhile; ?>
     </ol>
   </section> <!-- fim .painel .novidades -->
 
