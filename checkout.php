@@ -12,6 +12,8 @@
   <dl>
     <dt>Produto</dt>
     <dd><?= $_POST["nome"] ?></dd>
+    <dt>Preço</dt>
+    <dd><?= $_POST["preco"] ?></dd>
     <dt>Cor</dt>
     <dd><?= $_POST["cor"] ?></dd>
     <dt>Tamanho</dt>
