@@ -3,6 +3,7 @@
   $cabecalho_css = '<link rel="stylesheet" href="css/produto.css">';
   include_once("cabecalho.php");
 ?>
+<div class="produto-back">
   <div class="container">
     <div class="produto">
       <h1>Fuzzy Cardigan</h1>
@@ -36,6 +37,7 @@
         
       </form>
     </div> <!-- fim .produto -->
+    
     <div class="detalhes">
       <h2>Detalhes do Produto</h2>
       <p>Esse é o melhor casaco de Cardigã que você já viu. Excelente material italiano com estampa desenhada pelos artesãos da comunidade Krotor nas ilhas gregas. Compre já e receba hoje mesmo pela nossa entrega a jato.</p>
@@ -65,6 +67,7 @@
           </tr>
         </tbody>
       </table>
-    </div>
+    </div> <!-- fim .detalhes -->
   </div> <!-- fim .container -->
+</div> <!-- fim .produto-back -->
 <?php include_once("rodape.php"); ?>
