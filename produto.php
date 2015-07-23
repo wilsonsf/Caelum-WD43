@@ -38,6 +38,32 @@
     <div class="detalhes">
       <h2>Detalhes do Produto</h2>
       <p>Esse é o melhor casaco de Cardigã que você já viu. Excelente material italiano com estampa desenhada pelos artesãos da comunidade Krotor nas ilhas gregas. Compre já e receba hoje mesmo pela nossa entrega a jato.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Características</th>
+            <th>Detalhe</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Modelo</td>
+            <td>Cardigã 7845</td>
+          </tr>
+          <tr>
+            <td>Material</td>
+            <td>Algodão e poliester</td>
+          </tr>
+          <tr>
+            <td>Cores</td>
+            <td>Azul, Rosa e Verde</td>
+          </tr>
+          <tr>
+            <td>Lavagem</td>
+            <td>Lavar a mão</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div> <!-- fim .container -->
 <?php include_once("rodape.php"); ?>
