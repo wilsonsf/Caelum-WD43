@@ -19,6 +19,7 @@
          <h2>Sua compra</h2>
        </div> <!-- fim .panel-heading -->
        <div class="panel-body">
+         <img src="img/produtos/foto<?= $_POST["id"]."-".$_POST["cor"]?>.png" alt="<?= $_POST["name"] ?>" class="img-thumbnail img-responsive">
          <dl>
            <dt>Produto</dt>
            <dd><?= $_POST["nome"] ?></dd>
@@ -30,7 +31,7 @@
            <dd><?= $_POST["tamanho"] ?></dd>
          </dl>
        </div> <!-- fim .panel-body -->
-     </div>
-   </div> <!-- fim .panel .panel-default -->
+     </div> <!-- fim .panel .panel-default -->
+   </div> <!-- fim .container -->
 </body>
 </html>
