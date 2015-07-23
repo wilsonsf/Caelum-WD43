@@ -73,6 +73,20 @@ label[for=azul]:after {
   padding: 0.5em 1em;
   margin: 1em 0;
 }
+.detalhes { 
+  padding: 2em 0;
+}
+.detalhes h2 {
+  font-size: 1.5em;
+  line-height: 2;
+}
+.detalhes p {
+  margin: 1em 0;
+  font-size: 1em;
+  line-height: 1.5;
+  max-width: 36em;
+}
+
 @media (min-width: 630px) {
   .produto {
     /* para posicionar a imagem com absolute */
@@ -106,5 +120,8 @@ label[for=azul]:after {
     margin: 1em 0;
     min-width: 200px;
     width: 45%;
+  }
+  .detalhes {
+    font-size: 1.2em;
   }
 }
