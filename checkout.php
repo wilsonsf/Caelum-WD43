@@ -8,5 +8,12 @@
 <body>
   <h1>Ótima escolha!</h1>
   <p>Obrigado por comprar na Mirror Fashion! Preencha seus dados para efetivar a compra</p>
+  <h2>Sua compra</h2>
+  <dl>
+    <dt>Cor</dt>
+    <dd><?= $_POST["cor"] ?></dd>
+    <dt>Tamanho</dt>
+    <dd><?= $_POST["tamanho"] ?></dd>
+  </dl>
 </body>
 </html>
