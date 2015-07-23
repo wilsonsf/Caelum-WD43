@@ -27,7 +27,7 @@
           </label>
         </fieldset>
         <fieldset class="tamanhos">
-          <legend></legend>
+          <legend>Escolha o tamanho:</legend>
           
           <input type="range" min="36" max="46" value="42" step="2" name="tamanho" id="tamanho">
         </fieldset>

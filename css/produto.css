@@ -73,7 +73,7 @@ label[for=azul]:after {
   padding: 0.5em 1em;
   margin: 1em 0;
 }
-/* @media (mix-width: 630px) { */
+@media (min-width: 630px) {
   .produto {
     /* para posicionar a imagem com absolute */
     position: relative;
@@ -99,4 +99,12 @@ label[for=azul]:after {
     float: left;
     margin-right: 10px;
   }
-/* } */
+  fieldset {
+    display: inline-block;
+    vertical-align: top;
+    
+    margin: 1em 0;
+    min-width: 200px;
+    width: 45%;
+  }
+}
