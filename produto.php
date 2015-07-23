@@ -9,6 +9,7 @@
       <p>por apenas R$129,00</p>
       
       <form action="checkout.php" method="POST">
+        <input type="hidden" name="nome" value="Fuzzy Cardigan">
         <fieldset class="cores">
           <legend>Escolha a cor:</legend>
           <input type="radio" name="cor" value="verde" id="verde" checked>
