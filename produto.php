@@ -25,14 +25,19 @@
           <label for="azul">
             <img src="img/produtos/foto2-azul.png" alt="azul">
           </label>
-        </fieldset>
+        </fieldset> <!-- fim .cores -->
         <fieldset class="tamanhos">
           <legend>Escolha o tamanho:</legend>
           
           <input type="range" min="36" max="46" value="42" step="2" name="tamanho" id="tamanho">
-        </fieldset>
+        </fieldset><!-- fim .tamanhos -->
         <input type="submit" class="comprar" value="Comprar">
+        
       </form>
+    </div> <!-- fim .produto -->
+    <div class="detalhes">
+      <h2>Detalhes do Produto</h2>
+      <p>Esse é o melhor casaco de Cardigã que você já viu. Excelente material italiano com estampa desenhada pelos artesãos da comunidade Krotor nas ilhas gregas. Compre já e receba hoje mesmo pela nossa entrega a jato.</p>
     </div>
-  </div>
+  </div> <!-- fim .container -->
 <?php include_once("rodape.php"); ?>
