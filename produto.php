@@ -3,7 +3,7 @@
   $cabecalho_css = '<link rel="stylesheet" href="css/produto.css">';
   include_once("cabecalho.php");
   $conexao = mysqli_connect("localhost","root","","WD43");
-  $dados = mysqli_query($conexao, "SELECT * FROM produtos");
+  $dados = mysqli_query($conexao, "SELECT * FROM produtos WHERE id = $_GET[id]");
   $produto = mysqli_fetch_array($dados);
 ?>
 <div class="produto-back">
@@ -18,17 +18,17 @@
           <legend>Escolha a cor:</legend>
           <input type="radio" name="cor" value="verde" id="verde" checked>
           <label for="verde">
-            <img src="img/produtos/foto2-verde.png" alt="verde">
+            <img src="img/produtos/foto<?= $produto["id"] ?>-verde.png" alt="verde">
           </label>
           
           <input type="radio" name="cor" value="rosa" id="rosa">
           <label for="rosa">
-            <img src="img/produtos/foto2-rosa.png" alt="rosa">
+            <img src="img/produtos/foto<?= $produto["id"] ?>-rosa.png" alt="rosa">
           </label>
           
           <input type="radio" name="cor" value="azul" id="azul">
           <label for="azul">
-            <img src="img/produtos/foto2-azul.png" alt="azul">
+            <img src="img/produtos/foto<?= $produto["id"] ?>-azul.png" alt="azul">
           </label>
         </fieldset> <!-- fim .cores -->
         <fieldset class="tamanhos">
