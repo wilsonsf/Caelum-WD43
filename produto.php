@@ -1,10 +1,11 @@
 <?php
-  $cabecalho_title = "Produto da Mirror Fashion";
-  $cabecalho_css = '<link rel="stylesheet" href="css/produto.css">';
-  include_once("cabecalho.php");
   $conexao = mysqli_connect("localhost","root","","WD43");
   $dados = mysqli_query($conexao, "SELECT * FROM produtos WHERE id = $_GET[id]");
   $produto = mysqli_fetch_array($dados);
+
+  $cabecalho_title = $produto["nome"];
+  $cabecalho_css = '<link rel="stylesheet" href="css/produto.css">';
+  include_once("cabecalho.php");
 ?>
 <div class="produto-back">
   <div class="container">
@@ -13,24 +14,24 @@
       <p>por apenas R$<?= $produto["preco"] ?></p>
       
       <form action="checkout.php" method="POST">
-        <input type="hidden" name="id" value="1">
-        <input type="hidden" name="nome" value="Fuzzy Cardigan">
-        <input type="hidden" name="preco" value="129,00">
+        <input type="hidden" name="id" value="<?= $produto["id"]; ?>">
+        <input type="hidden" name="nome" value="<?= $produto["nome"] ?>">
+        <input type="hidden" name="preco" value="<?= $produto["preco"] ?>">
         <fieldset class="cores">
           <legend>Escolha a cor:</legend>
           <input type="radio" name="cor" value="verde" id="verde" checked>
           <label for="verde">
-            <img src="img/produtos/foto<?= $produto["id"] ?>-verde.png" alt="verde">
+            <img src="img/produtos/foto<?= $produto["id"]; ?>-verde.png" alt="verde">
           </label>
           
           <input type="radio" name="cor" value="rosa" id="rosa">
           <label for="rosa">
-            <img src="img/produtos/foto<?= $produto["id"] ?>-rosa.png" alt="rosa">
+            <img src="img/produtos/foto<?= $produto["id"]; ?>-rosa.png" alt="rosa">
           </label>
           
           <input type="radio" name="cor" value="azul" id="azul">
           <label for="azul">
-            <img src="img/produtos/foto<?= $produto["id"] ?>-azul.png" alt="azul">
+            <img src="img/produtos/foto<?= $produto["id"]; ?>-azul.png" alt="azul">
           </label>
         </fieldset> <!-- fim .cores -->
         <fieldset class="tamanhos">
