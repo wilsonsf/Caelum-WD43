@@ -21,7 +21,7 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-sm-4 col-lg-3">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h2>Sua compra</h2>
@@ -42,7 +42,7 @@
         </div> <!-- fim .panel .panel-default -->
       </div>
 
-      <form action="" class="col-sm-8">
+      <form action="" class="col-sm-8 col-lg-9">
         <div class="row">
           <fieldset class="col-md-6">
             <legend>Dados pessoais</legend>
