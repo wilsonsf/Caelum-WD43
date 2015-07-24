@@ -10,16 +10,6 @@
       border: 1px solid #cc0000;
     }
   </style>
-  <script type="text/javascript">
-    document.querySelector("input[type=email]").oninvalid = function() {
-      //remove mensagem de erro antigas
-      this.setCustomValidity("");
-
-      if (!this.validity.valid) {
-        this.setCustomValidity("Email inválido");
-      }
-    }
-  </script>
 </head>
 <body>
   <div class="jumbotron">
@@ -66,7 +56,7 @@
               <label for="email">Email</label>
               <div class="input-group">
                 <span class="input-group-addon">@</span>
-                <input type="email" class="form-control" id="email" name="email" placeholder="email@exemplo.com">
+                <input type="email" class="form-control" id="email" name="email" placeholder="email@exemplo.com" required>
               </div>
             </div> <!-- fim .form-group -->
 
@@ -88,12 +78,12 @@
 
             <div class="form-group">
               <label for="numero-cartao">Número - CVV</label>
-              <input type="text" class="form-control" id=" numero-cartao" name="numero-cartao">
+              <input type="text" class="form-control" id=" numero-cartao" name="numero-cartao" required>
             </div> <!-- fim .form-group -->
 
             <div class="form-group">
               <label for="bandeira-cartao">Bandeira</label>
-              <select name="bandeira-cartao" id="bandeira-cartao" class="bandeira-cartao">
+              <select name="bandeira-cartao" id="bandeira-cartao" class="bandeira-cartao" required>
                 <option value="master">MasterCard</option>
                 <option value="visa">VISA</option>
                 <option value="amex">American Express</option>
@@ -102,7 +92,7 @@
 
             <div class="form-group">
               <label for="validade-cartao">Validade</label>
-              <input type="month" name="validade-cartao" id="validade-cartao" class="form-control">
+              <input type="month" name="validade-cartao" id="validade-cartao" class="form-control" required>
             </div> <!-- fim .form-group -->
           </fieldset> <!-- fim .col-md-6 -->
         </div> <!-- fim .row -->
@@ -116,5 +106,15 @@
 
     </div> <!-- fim .row -->
   </div> <!-- fim .container -->
+  <script>
+    document.querySelector("input[type=email]").oninvalid = function() {
+      //remove mensagem de erro antigas
+      this.setCustomValidity("");
+
+      if (!this.validity.valid) {
+        this.setCustomValidity("Email inválido!");
+      }
+    }
+  </script>
 </body>
 </html>
