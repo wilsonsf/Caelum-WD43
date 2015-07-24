@@ -77,7 +77,7 @@
         </div>
       </fieldset>
 
-      <button type="submit" class="btn btn-primary">
+      <button type="submit" class="btn btn-primary btn-lg pull-right">
         <span class="glyphicon glyphicon-thumbs-up"></span>
         Confirmar Pedido
       </button>
