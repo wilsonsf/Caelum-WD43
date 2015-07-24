@@ -52,7 +52,7 @@
         <a href="produto.php?id=<?= $prod["id"] ?>">
           <figure>
             <img src="img/produtos/miniatura<?= $prod["id"] ?>.png" alt="<?= $prod["name"] ?>">
-            <figcaption><?= $prod["name"] ?> por R$<?= $prod["preco"] ?></figcaption>
+            <figcaption><?= $prod["nome"] ?> por R$<?= $prod["preco"] ?></figcaption>
           </figure>
         </a>
       </li>
@@ -71,7 +71,7 @@
         <a href="produto.php?id=<?= $prod["id"] ?>">
           <figure>
             <img src="img/produtos/miniatura<?= $prod["id"] ?>.png" alt="<?= $prod["name"] ?>">
-            <figcaption><?= $prod["name"] ?> por R$<?= $prod["preco"] ?></figcaption>
+            <figcaption><?= $prod["nome"] ?> por R$<?= $prod["preco"] ?></figcaption>
           </figure>
         </a>
       </li>
