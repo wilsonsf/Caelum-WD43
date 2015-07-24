@@ -42,7 +42,7 @@
 </div> <!-- fim .container .destaque -->
 
 <div class="container paineis">
-  <section class="painel novidades">
+  <section class="painel novidades painel-compacto">
     <h2>Novidades</h2>
     <ol>
       <?php 
@@ -59,9 +59,9 @@
       <?php endwhile; ?>
     </ol>
     <button type="button">Mostra mais</button>
-  </section> <!-- fim .painel .novidades -->
+  </section> <!-- fim .painel .novidades .painel-compacto -->
 
-  <section class="painel mais-vendidos">
+  <section class="painel mais-vendidos painel-compacto">
     <h2>Mais Vendidos</h2>
     <ol>
       <?php 
@@ -78,7 +78,7 @@
       <?php endwhile; ?>
     </ol>
     <button type="button">Mostra mais</button>
-  </section> <!-- fim .painel .mais-vendidos -->
+  </section> <!-- fim .painel .mais-vendidos .painel-compacto -->
 </div> <!-- fim .container .paineis -->
 <script src="js/home.js"></script>
 <?php include_once("rodape.php"); ?>
