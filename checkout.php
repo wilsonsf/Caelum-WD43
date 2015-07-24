@@ -5,6 +5,11 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <title>Checkout Mirror Fashion</title>
   <meta name="viewport" content="width=device-width">
+  <style type="text/css">
+    .form-control:invalid {
+      border: 1px solid #cc0000;
+    }
+  </style>
 </head>
 <body>
   <div class="jumbotron">
@@ -37,7 +42,7 @@
         <legend>Dados pessoais</legend>
         <div class="form-group">
           <label for="nome">Nome completo</label>
-          <input type="text" class="form-control" id="nome" name="nome" autofocus>
+          <input type="text" class="form-control" id="nome" name="nome" autofocus required>
         </div>
         <div class="form-group">
           <label for="email">Email</label>
@@ -49,14 +54,13 @@
 
         <div class="form-group">
           <label for="cpf">CPF</label>
-          <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00">
+          <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" required>
         </div>
 
         <div class="checkbox">
           <input type="checkbox" value="sim" name="spam" id="" checked>
           <label>
             Quero receber spam da Mirror Fashion
-          </label>
         </div>
       </fieldset>
 
