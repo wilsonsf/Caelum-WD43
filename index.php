@@ -46,7 +46,7 @@
     <h2>Novidades</h2>
     <ol>
       <?php 
-        $dados = mysqli_query($conexao, "SELECT * FROM produtos ORDER BY data DESC LIMIT 6");
+        $dados = mysqli_query($conexao, "SELECT * FROM produtos ORDER BY data DESC LIMIT 12");
         while($prod = mysqli_fetch_array($dados)): ?>
       <li>
         <a href="produto.php?id=<?= $prod["id"] ?>">
@@ -64,7 +64,7 @@
     <h2>Mais Vendidos</h2>
     <ol>
       <?php 
-        $dados = mysqli_query($conexao, "SELECT * FROM produtos ORDER BY vendas DESC LIMIT 6");
+        $dados = mysqli_query($conexao, "SELECT * FROM produtos ORDER BY vendas DESC LIMIT 12");
         while($prod = mysqli_fetch_array($dados)): ?>
       <li>
         <a href="produto.php?id=<?= $prod["id"] ?>">
