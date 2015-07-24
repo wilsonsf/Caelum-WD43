@@ -17,6 +17,17 @@
   </style>
 </head>
 <body>
+  <nav class="navbar navbar-default">
+    <div class="navbar-header">
+      <a href="index.php" class="navbar-brand">Mirror Fashion</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="sobre.php">Sobre</a></li>
+      <li><a href="#">Ajuda</a></li>
+      <li><a href="#">Perguntas frequentes</a></li>
+      <li><a href="#">Entre em contato</a></li>
+    </ul>
+  </nav>
   <div class="jumbotron">
     <div class="container">
       <h1>Ótima escolha!</h1>
