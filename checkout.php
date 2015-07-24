@@ -97,7 +97,7 @@
         </div> <!-- fim .panel .panel-default -->
       </div>
 
-      <form action="" class="col-sm-8 col-lg-9">
+      <form action="" method="POST" class="col-sm-8 col-lg-9">
         <div class="row">
           <fieldset class="col-md-6">
             <legend>Dados pessoais</legend>
@@ -117,7 +117,7 @@
 
             <div class="form-group">
               <label for="cpf">CPF</label>
-              <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+              <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" data-mask="999.999.999-99" required>
             </div> <!-- fim .form-group -->
 
             <div class="checkbox">
@@ -133,7 +133,7 @@
 
             <div class="form-group">
               <label for="numero-cartao">Número - CVV</label>
-              <input type="text" class="form-control" id=" numero-cartao" name="numero-cartao" required>
+              <input type="text" class="form-control" id=" numero-cartao" name="numero-cartao" placeholder="0000 0000 0000 0000 - 000" data-mask="9999 9999 9999 9999 - 999" required>
             </div> <!-- fim .form-group -->
 
             <div class="form-group">
@@ -173,5 +173,6 @@
   </script>
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.js"></script>
+  <script src="js/inputmask-plugin.js"></script>
 </body>
 </html>
