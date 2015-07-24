@@ -1,3 +1,8 @@
+<?php
+  $conexao = mysqli_connect("localhost","root","","WD43");
+  $dados = mysqli_query($conexao, "SELECT * FROM produtos WHERE id = $_POST[id]");
+  $produto = mysqli_fetch_array($dados);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,12 +32,12 @@
             <h2>Sua compra</h2>
           </div> <!-- fim .panel-heading -->
           <div class="panel-body">
-            <img src="img/produtos/foto<?= $_POST["id"]."-".$_POST["cor"]?>.png" alt="<?= $_POST["nome"] ?>" class="img-thumbnail img-responsive hidden-xs">
+            <img src="img/produtos/foto<?= $_POST["id"]."-".$_POST["cor"]?>.png" alt="<?= $produto["nome"] ?>" class="img-thumbnail img-responsive hidden-xs">
             <dl>
               <dt>Produto</dt>
-              <dd><?= $_POST["nome"] ?></dd>
+              <dd><?= $produto["nome"] ?></dd>
               <dt>Preço</dt>
-              <dd><?= $_POST["preco"] ?></dd>
+              <dd><?= $produto["preco"] ?></dd>
               <dt>Cor</dt>
               <dd><?= $_POST["cor"] ?></dd>
               <dt>Tamanho</dt>
