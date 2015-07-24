@@ -190,6 +190,9 @@ footer .container {
           transform: rotate(-15deg);
 
 }
+.painel button {
+  display: none;
+}
 
 .novidades {
   float: left;

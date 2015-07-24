@@ -58,6 +58,7 @@
       </li>
       <?php endwhile; ?>
     </ol>
+    <button type="button">Mostra mais</button>
   </section> <!-- fim .painel .novidades -->
 
   <section class="painel mais-vendidos">
@@ -76,6 +77,7 @@
       </li>
       <?php endwhile; ?>
     </ol>
+    <button type="button">Mostra mais</button>
   </section> <!-- fim .painel .mais-vendidos -->
 </div> <!-- fim .container .paineis -->
 <script src="js/home.js"></script>
