@@ -21,7 +21,7 @@
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-default navbar-static-top">
+  <nav class="navbar navbar-inverse navbar-static-top">
     <div class="navbar-header">
       <a href="index.php" class="navbar-brand">Mirror Fashion</a>
       <button class="navbar-toggle" type="button" data-target=".navbar-collapse" data-toggle="collapse">
