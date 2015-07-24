@@ -24,8 +24,11 @@
   <nav class="navbar navbar-default navbar-static-top">
     <div class="navbar-header">
       <a href="index.php" class="navbar-brand">Mirror Fashion</a>
+      <button class="navbar-toggle" type="button" data-target=".navbar-collapse" data-toggle="collapse">
+        menu
+      </button>
     </div>
-    <ul class="nav navbar-nav">
+    <ul class="nav navbar-nav collapse navbar-collapse">
       <li><a href="sobre.php">Sobre</a></li>
       <li><a href="#">Ajuda</a></li>
       <li><a href="#">Perguntas frequentes</a></li>
@@ -136,5 +139,7 @@
       }
     }
   </script>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
 </body>
 </html>
