@@ -56,7 +56,10 @@
         </div>
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="email@exemplo.com">
+          <div class="input-group">
+            <span class="input-group-addon">@</span>
+            <input type="email" class="form-control" id="email" name="email" placeholder="email@exemplo.com">
+          </div>
         </div>
 
         <div class="form-group">
