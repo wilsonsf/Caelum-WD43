@@ -10,6 +10,16 @@
       border: 1px solid #cc0000;
     }
   </style>
+  <script type="text/javascript">
+    document.querySelector("input[type=email]").oninvalid = function() {
+      //remove mensagem de erro antigas
+      this.setCustomValidity("");
+
+      if (!this.validity.valid) {
+        this.setCustomValidity("Email inválido");
+      }
+    }
+  </script>
 </head>
 <body>
   <div class="jumbotron">
