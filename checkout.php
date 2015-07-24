@@ -27,7 +27,7 @@
             <h2>Sua compra</h2>
           </div> <!-- fim .panel-heading -->
           <div class="panel-body">
-            <img src="img/produtos/foto<?= $_POST["id"]."-".$_POST["cor"]?>.png" alt="<?= $_POST["nome"] ?>" class="img-thumbnail img-responsive">
+            <img src="img/produtos/foto<?= $_POST["id"]."-".$_POST["cor"]?>.png" alt="<?= $_POST["nome"] ?>" class="img-thumbnail img-responsive hidden-xs">
             <dl>
               <dt>Produto</dt>
               <dd><?= $_POST["nome"] ?></dd>
