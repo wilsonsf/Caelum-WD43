@@ -12,28 +12,59 @@
   <title>Checkout Mirror Fashion</title>
   <meta name="viewport" content="width=device-width">
   <style type="text/css">
+  @media (max-width: 767px) {
+    body {
+      padding-top: 68px;
+    }
+  }
     .form-control:invalid {
       border: 1px solid #cc0000;
     }
     .navbar {
+      min-width: 240px;
       /* Removendo margens - navbar */
       margin: 0;
+    }
+    .navbar .glyphicon {
+      color: #fff;
     }
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-default navbar-static-top">
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="navbar-header">
-      <a href="index.php" class="navbar-brand">Mirror Fashion</a>
+      <a href="index.php" class="navbar-brand">
+        <img src="img/logo-rodape.png" alt="" class="img-responsive">
+      </a>
       <button class="navbar-toggle" type="button" data-target=".navbar-collapse" data-toggle="collapse">
-        menu
+        <span class="glyphicon glyphicon-align-justify"></span>
       </button>
     </div>
     <ul class="nav navbar-nav collapse navbar-collapse">
-      <li><a href="sobre.php">Sobre</a></li>
-      <li><a href="#">Ajuda</a></li>
-      <li><a href="#">Perguntas frequentes</a></li>
-      <li><a href="#">Entre em contato</a></li>
+      <li>
+        <a href="sobre.php">
+          Sobre
+          <span class="glyphicon glyphicon-home"></span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Ajuda
+          <span class="glyphicon glyphicon-question-sign"></span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Perguntas frequentes
+          <span class="glyphicon glyphicon-list-alt"></span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Entre em contato
+          <span class="glyphicon glyphicon-bullhorn"></span>
+        </a>
+      </li>
     </ul>
   </nav>
   <div class="jumbotron">
