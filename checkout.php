@@ -53,65 +53,67 @@
       </div>
 
       <form action="" class="col-sm-8">
-        <fieldset>
-          <legend>Dados pessoais</legend>
-          
-          <div class="form-group">
-            <label for="nome">Nome completo</label>
-            <input type="text" class="form-control" id="nome" name="nome" autofocus required>
-          </div> <!-- fim .form-group -->
+        <div class="row">
+          <fieldset class="col-md-6">
+            <legend>Dados pessoais</legend>
+            
+            <div class="form-group">
+              <label for="nome">Nome completo</label>
+              <input type="text" class="form-control" id="nome" name="nome" autofocus required>
+            </div> <!-- fim .form-group -->
 
-          <div class="form-group">
-            <label for="email">Email</label>
-            <div class="input-group">
-              <span class="input-group-addon">@</span>
-              <input type="email" class="form-control" id="email" name="email" placeholder="email@exemplo.com">
-            </div>
-          </div> <!-- fim .form-group -->
+            <div class="form-group">
+              <label for="email">Email</label>
+              <div class="input-group">
+                <span class="input-group-addon">@</span>
+                <input type="email" class="form-control" id="email" name="email" placeholder="email@exemplo.com">
+              </div>
+            </div> <!-- fim .form-group -->
 
-          <div class="form-group">
-            <label for="cpf">CPF</label>
-            <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" required>
-          </div> <!-- fim .form-group -->
+            <div class="form-group">
+              <label for="cpf">CPF</label>
+              <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+            </div> <!-- fim .form-group -->
 
-          <div class="checkbox">
-            <input type="checkbox" value="sim" name="spam" id="" checked>
-            <label>
-              Quero receber spam da Mirror Fashion
-            </label>
-          </div> <!-- fim .checkbox -->
-        </fieldset>
+            <div class="checkbox">
+              <input type="checkbox" value="sim" name="spam" id="" checked>
+              <label>
+                Quero receber spam da Mirror Fashion
+              </label>
+            </div> <!-- fim .checkbox -->
+          </fieldset> <!-- fim .col-md-6 -->
 
-        <fieldset>
-          <legend>Cartão de crédito</legend>
+          <fieldset class="col-md-6">
+            <legend>Cartão de crédito</legend>
 
-          <div class="form-group">
-            <label for="numero-cartao">Número - CVV</label>
-            <input type="text" class="form-control" id=" numero-cartao" name="numero-cartao">
-          </div> <!-- fim .form-group -->
+            <div class="form-group">
+              <label for="numero-cartao">Número - CVV</label>
+              <input type="text" class="form-control" id=" numero-cartao" name="numero-cartao">
+            </div> <!-- fim .form-group -->
 
-          <div class="form-group">
-            <label for="bandeira-cartao">Bandeira</label>
-            <select name="bandeira-cartao" id="bandeira-cartao" class="bandeira-cartao">
-              <option value="master">MasterCard</option>
-              <option value="visa">VISA</option>
-              <option value="amex">American Express</option>
-            </select>
-          </div> <!-- fim .form-group -->
+            <div class="form-group">
+              <label for="bandeira-cartao">Bandeira</label>
+              <select name="bandeira-cartao" id="bandeira-cartao" class="bandeira-cartao">
+                <option value="master">MasterCard</option>
+                <option value="visa">VISA</option>
+                <option value="amex">American Express</option>
+              </select>
+            </div> <!-- fim .form-group -->
 
-          <div class="form-group">
-            <label for="validade-cartao">Validade</label>
-            <input type="month" name="validade-cartao" id="validade-cartao" class="form-control">
-          </div> <!-- fim .form-group -->
-        </fieldset>
+            <div class="form-group">
+              <label for="validade-cartao">Validade</label>
+              <input type="month" name="validade-cartao" id="validade-cartao" class="form-control">
+            </div> <!-- fim .form-group -->
+          </fieldset> <!-- fim .col-md-6 -->
+        </div> <!-- fim .row -->
 
         <button type="submit" class="btn btn-primary btn-lg pull-right">
           <span class="glyphicon glyphicon-thumbs-up"></span>
           Confirmar Pedido
         </button> <!-- fim .btn .btn-primary .btn-lg .pull-right -->
-
+        
       </form> <!-- fim .col-sm-8 -->
-      
+
     </div> <!-- fim .row -->
   </div> <!-- fim .container -->
 </body>
