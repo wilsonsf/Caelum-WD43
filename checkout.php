@@ -53,7 +53,6 @@
           <input type="checkbox" value="sim" name="spam" id="" checked>
           <label>
             Quero receber spam da Mirror Fashion
-          </label>
         </div>
       </fieldset>
 
