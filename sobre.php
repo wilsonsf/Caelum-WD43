@@ -51,5 +51,10 @@
         <li>Mais de um milhão de funcionários em todo o mundo</li>
     </ul>
   </section>
+  <section>
+    <h2></h2>
+    <iframe width="854" height="510" src="https://www.youtube.com/embed/Tb06abHE4hY" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.341814462694!2d-46.63601740000002!3d-23.592071200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2c0f6a2c57%3A0x938b957283f8354f!2sDiver+Som!5e0!3m2!1spt-BR!2sbr!4v1437752872674" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </section>
 </article> <!-- fim .container -->
 <?php include_once("rodape.php"); ?>
