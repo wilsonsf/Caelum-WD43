@@ -14,10 +14,14 @@
     .form-control:invalid {
       border: 1px solid #cc0000;
     }
+    .navbar {
+      /* Removendo margens - navbar */
+      margin: 0;
+    }
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default navbar-static-top">
     <div class="navbar-header">
       <a href="index.php" class="navbar-brand">Mirror Fashion</a>
     </div>
