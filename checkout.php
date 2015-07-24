@@ -5,6 +5,11 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <title>Checkout Mirror Fashion</title>
   <meta name="viewport" content="width=device-width">
+  <style type="text/css">
+    .form-control:invalid {
+      border: 1px solid #cc0000;
+    }
+  </style>
 </head>
 <body>
   <div class="jumbotron">
